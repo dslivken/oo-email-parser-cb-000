@@ -11,7 +11,7 @@ class EmailParser
   def parse
     temp=[]
     @emails.split(',').each do |e|
-      if !temp.include(e)
+      if !temp.include?(e)
         temp<<e
       end
     end
