@@ -11,7 +11,7 @@ class EmailParser
   def parse
     @list=[]
     @emails.split(/[, ]/).each do |e|
-      if !@list.include?(e)
+      if e!="" && !@list.include?(e)
         @list<<e
       end
     end
