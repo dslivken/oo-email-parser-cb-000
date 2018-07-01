@@ -20,5 +20,6 @@ class EmailParser
 end
 
 emails = "john@doe.com, person@somewhere.org, john@doe.com"
+emails2 = "john@doe.com person@somewhere.org john@doe.com"
 parser=EmailParser.new(emails)
 binding pry
