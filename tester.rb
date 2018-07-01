@@ -10,7 +10,7 @@ class EmailParser
 
   def parse
     @list=[]
-    @emails.split(/[], ]/).each do |e|
+    @emails.split(/[, ]/).each do |e|
       if !@list.include?(e)
         @list<<e
       end
