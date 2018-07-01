@@ -9,13 +9,13 @@ class EmailParser
   end
 
   def parse
-    temp=[]
+    @list=[]
     @emails.split(',').each do |e|
-      if !temp.include?(e)
-        temp<<e
+      if !@list.include?(e)
+        @list<<e
       end
     end
-    temp
+    @list
   end
 end
 
