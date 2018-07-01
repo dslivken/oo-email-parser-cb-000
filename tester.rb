@@ -22,4 +22,5 @@ end
 emails = "john@doe.com, person@somewhere.org, john@doe.com"
 emails2 = "john@doe.com person@somewhere.org john@doe.com"
 parser=EmailParser.new(emails)
+parser2=EmailParser.new(emails2)
 binding pry
